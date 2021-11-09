@@ -10,7 +10,6 @@ async def bot_echo(message: types.Message):
     await message.answer(f"Эхо без состояния."
                          f"Сообщение:\n"
                          f"{message.text}")
-    lolol()
 
 
 # Эхо хендлер, куда летят ВСЕ сообщения с указанным состоянием

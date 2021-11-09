@@ -8,11 +8,11 @@ async def on_startup(dispatcher):
     # Устанавливаем дефолтные команды
     await dispatcher.bot.set_my_commands(
         [
-            types.BotCommand("start", "Запустить бота"),
+            types.BotCommand("start", "Начать тест"),
             types.BotCommand("help", "Вывести справку"),
         ]
     )
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, on_startup=on_startup)
+    executor.start_polling(dp, on_startup=on_startup, skip_updates=True)
